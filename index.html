@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#ffffff">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./quiz-Css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <section class="quiz-main-section">
+        <div class="img-quiz">
+            <img src="./quiz-img/Question.svg" alt="This is Question img">
+        </div>
+        <div class="quiz-body">
+            <h1>Quiz App With Fixed Time</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, magnam voluptatem modi nobis cupiditate eligendi, qui dolor necessitatibus id, iste eum repellat similique dignissimos inventore?</p>
+            <h1>Quiz App With Fixed Time</h1>
+            <p id="bottom-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dignissimos tempore accusantium quibusdam laboriosam voluptas!</p>
+
+        </div>
+        <div class="start-button">
+            <button>Start Quiz</button>
+        </div>
+    </section>
+
+    <section class="quizRules">
+        
+            <div class="RulesTitle">Some Rules of this Quiz</div>
+             <div class="RulesList">
+                <ol>
+                    <li>You will have only <span>15 seconds</span> per each question.</li>
+                    <li>Once you select your answer, it can't be undone.</li>
+                    <li>You can't select any option once time goes off.</li>
+                    <li> You can't exit from the Quiz while you're playing.</li>
+                    <li>You'll get points on the basis of your correct answers.</li>
+        
+                </ol>
+           </div>
+        
+           <div class="Button-exit">
+              <button class="ExitButton" onclick="confirmExit()">Exit Quiz</button>
+           </div>
+           <div class="Button-continue">
+            <button class="ContinueButton">Continue</button>
+         </div>  
+    </section>
+
+
+    <section class="Questions-heru">
+
+        <header class="QuestionsHeader">
+            <div class="title">Start Exam</div>
+    
+            <div class="TimeCount">
+                <div class="TimeLeft">Time Left</div>
+                <div class="Seconds">15</div>
+            </div>
+    
+            <div class="timeLines"></div>
+        </header>
+    
+    
+        <div class="section">
+    
+            <div class="text-head">  
+                 
+                
+            </div>
+         
+            <div class="MyOptions">
+                <div class="option">
+                    <span class="option-text"></span>
+                </div>
+            </div>
+            
+        </div>
+
+        <footer class="que-footer">
+            <p id="queNum"></p>
+           
+            <div class="Preview-left">
+                <button class="PreviewBtn">Preview</button>
+            </div>
+            <div class="nextBtn-right">
+                <button class="nextBtn">Next</button>
+            </div>
+            <div class="submitBtn">
+                <button class="Submit">Submit</button>
+            </div>
+            
+        </footer>
+        
+    </section>
+
+    <section class="WinnerHero">
+        <div class="WinnerBanner">
+            <img src="./quiz-img/winner.svg" alt="Winner">
+        </div>
+        <div class="WinnerHead">
+            <h1>Congrats!</h1>
+        </div>
+        <div class="WinnerPara">
+            <p>You Scored<span id="resultTag">0%</span></p>
+            <p class="completion-text">Quiz completed successfully.</p>
+        </div>
+        <div class="WinnerStats">
+            <p>Total Questions: <span id="totalQuestions">0</span></p>
+            <p>Correct Answers: <span id="correctAnswers">0</span></p>
+            <p>Wrong Answers: <span id="wrongAnswers">0</span></p>
+        </div>
+        <div class="WinnerFollowBtn" style="text-align: center;">
+            <p>Share with us:</p>
+            <button class="social-buttons" onclick="shareOnWhatsApp()"><i class="fa-brands fa-square-whatsapp"></i></button>
+            <button class="social-buttons" onclick="shareOnFacebook()"><i class="fa-brands fa-facebook"></i></button>
+            <button class="social-buttons" onclick="shareOnInstagram()"><i class="fa-brands fa-square-instagram"></i></button>
+        </div>
+        <div class="QuizBack">
+            <button>Back</button>
+      </div>
+    </section>
+
+
+
+    <script src="./quiz-js/styles.js"></script>
+    <script src="./quiz-js/quiz.js"></script>
+    <script src="./quiz-js/quiz-array.js"></script>
+    
+</body>
+</html>
